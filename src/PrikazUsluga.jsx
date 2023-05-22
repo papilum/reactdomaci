@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Red from './Red';
 
-const PrikazUsluga = ({ usluge }) => {
+const PrikazUsluga = ({ usluge ,ocene}) => {
   const tableStyle = {
     width: '100%',
     borderCollapse: 'collapse',
@@ -34,20 +35,13 @@ const PrikazUsluga = ({ usluge }) => {
         <tr>
           <th style={thStyle}>Naziv</th>
           <th style={thStyle}>Cena</th>
+          <th style={thStyle}>Prosecna ocena</th>
           <th style={thStyle}></th>
         </tr>
       </thead>
       <tbody>
         {usluge.map((usluga) => (
-          <tr key={usluga.id}>
-            <td style={tdStyle}>{usluga.naziv}</td>
-            <td style={tdStyle}>{usluga.cena}</td>
-            <td style={tdStyle}>
-              <Link to={`/usluge/${usluga.id}`} style={linkStyle}>
-                Detalji
-              </Link>
-            </td>
-          </tr>
+          <Red usluga={usluga} ocene={ocene}></Red>
         ))}
       </tbody>
     </table>

@@ -49,7 +49,7 @@ function App() {
   ]);
   return (
      <BrowserRouter> 
-        <PrikazUsluga usluge={usluge}></PrikazUsluga>
+        <PrikazUsluga usluge={usluge} ocene={ocene}></PrikazUsluga>
       </BrowserRouter> 
   );
 }
