@@ -6,3 +6,27 @@
 
 
 
+/* Pocetna.css */
+
+.pocetna {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+.pocetna-slika {
+  width: 80%;
+  height: auto;
+ 
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.pocetna-tekst {
+  margin-top: 20px;
+  font-size: 18px;
+  text-align: center;
+}
