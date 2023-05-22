@@ -53,7 +53,7 @@ function App() {
      <BrowserRouter> 
         <Navbar></Navbar>
         <Routes>
-          <Route path='/usluge/:id' element={<Detalji usluge={usluge} ocene={ocene}></Detalji>}></Route>
+          <Route path='/usluge/:id' element={<Detalji usluge={usluge} ocene={ocene} setOcene={setOcene}></Detalji>}></Route>
 
           <Route path='/usluge' element={<PrikazUsluga usluge={usluge} ocene={ocene}></PrikazUsluga>}></Route>
 
