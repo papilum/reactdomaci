@@ -31,6 +31,8 @@ const Red = ({ usluga, ocene }) => {
     <tr key={usluga.id}>
       <td style={tdStyle}>{usluga.id}</td>
       <td style={tdStyle}>{usluga.naziv}</td>
+      <td style={tdStyle}>{usluga.cena}</td>
+
       <td style={tdStyle}>{prosecnaOcena.toFixed(2)}</td>
       <td style={tdStyle}>
         <Link to={`/usluge/${usluga.id}`} style={linkStyle}>
