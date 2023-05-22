@@ -2,7 +2,8 @@
 import { useState } from 'react';
 import './App.css';
 import PrikazUsluga from './PrikazUsluga';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Navbar from './Navbar';
 
 function App() {
   const [usluge, setUsluge] = useState([
@@ -49,7 +50,12 @@ function App() {
   ]);
   return (
      <BrowserRouter> 
-        <PrikazUsluga usluge={usluge} ocene={ocene}></PrikazUsluga>
+        <Navbar></Navbar>
+        <Routes>
+
+          <Route path='/usluge' element={<PrikazUsluga usluge={usluge} ocene={ocene}></PrikazUsluga>}></Route>
+        </Routes>
+        
       </BrowserRouter> 
   );
 }
