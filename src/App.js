@@ -4,6 +4,7 @@ import './App.css';
 import PrikazUsluga from './PrikazUsluga';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Navbar from './Navbar';
+import Detalji from './Detalji';
 
 function App() {
   const [usluge, setUsluge] = useState([
@@ -52,8 +53,10 @@ function App() {
      <BrowserRouter> 
         <Navbar></Navbar>
         <Routes>
+          <Route path='/usluge/:id' element={<Detalji usluge={usluge} ocene={ocene}></Detalji>}></Route>
 
           <Route path='/usluge' element={<PrikazUsluga usluge={usluge} ocene={ocene}></PrikazUsluga>}></Route>
+
         </Routes>
         
       </BrowserRouter> 
