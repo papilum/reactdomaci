@@ -10,7 +10,7 @@ function App() {
   const [usluge, setUsluge] = useState([
     {
       id: 1,
-      naziv: 'Usluga 1',
+      naziv: 'AAA 1',
       opis: 'Opis usluge 1',
       cena: 100,
     },
