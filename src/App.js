@@ -11,21 +11,21 @@ function App() {
   const [usluge, setUsluge] = useState([
     {
       id: 1,
-      naziv: 'AAA 1',
-      opis: 'Opis usluge 1',
-      cena: 100,
+      naziv: 'Dubinsko pranje enterijera',
+      opis: 'Temeljito čišćenje svih površina unutar vozila, uključujući sedišta, tepihe, podove, i druge unutrašnje delove.',
+      cena: 1500,
     },
     {
       id: 2,
-      naziv: 'Usluga 2',
-      opis: 'Opis usluge 2',
-      cena: 150,
+      naziv: 'Poliranje karoserije',
+      opis: 'Profesionalno poliranje i sjaj karoserije, uklanjanje ogrebotina i oživljavanje boje vozila.',
+      cena: 2000,
     },
     {
       id: 3,
-      naziv: 'Usluga 3',
-      opis: 'Opis usluge 3',
-      cena: 200,
+      naziv: 'Dubinsko pranje motora',
+      opis: 'Detaljno čišćenje motora, uklanjanje prljavštine, masti i ostalih nečistoća radi poboljšane performanse i izgleda.',
+      cena: 2500,
     },
   ]);
 
